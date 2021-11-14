@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 
 
@@ -25,7 +26,7 @@ async def 난적이(ctx):
 @client.command()
 async def 안기태(ctx):
     await ctx.send('당신은 샌즈옆에빵셔틀에게 5골드를 보내야합니다')
-
-
-
-client.run('OTA5MDA0Mjk3ODg5NTIxNjc0.YY9-OQ.gKbzEqSwgTc0yH7CsuL99PkzDJY')
+    
+    
+access_token = os.environ["BOT_TOKEN"]
+client.run('access_token')
